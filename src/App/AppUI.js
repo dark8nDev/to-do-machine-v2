@@ -9,6 +9,7 @@ import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 
 function AppUI() {
     const {
@@ -54,7 +55,7 @@ function AppUI() {
 
             {openModal && (
                 <Modal>
-                    Crear tareas
+                    <TodoForm />
                 </Modal>
             )}
         </>
